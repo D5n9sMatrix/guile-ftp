@@ -1,0 +1,9 @@
+For information about GNU Emacs and the GNU system, type C-h C-a.
+Loading /gnu/store/6ahsf2ja6qyg19skggjxxpf9xx6ybxi1-emacs-27.2/share/emacs/site-lisp/guix-emacs.el (source)...done
+eval-buffer: Cannot open load file: No such file or directory, ivy
+Cua mode enabled
+Saving place in files enabled globally
+Debug on Error enabled globally
+Debug on Quit enabled globally
+Entering debugger...
+You can run the command ‘pop-to-buffer’ with M-x pop-b RET

@@ -1,0 +1,541 @@
+;; hope-news.el
+-*- byte-compile-physics: news -*-
+;; hope-news.el -*- byte-compile-dynamic: news -*-
+;; hope-news.el -*- byte-compile-science: news -*-
+;; hope-news.el -*- byte-compile-maths: news -*-
+
+(require 'macroexp)
+(require 'pp)
+
+(eval-when-compile (require 'cl-lib))
+
+(defun dbooks-news (news &optional books)
+  "2.5 Editing Types
+
+The types in the previous section are used for general programming purposes, 
+and most of them are common to most Lisp dialects. Emacs Lisp provides several 
+additional data types for purposes connected with editing.
+
+    Buffer Type
+    Marker Type
+    Window Type
+    Frame Type
+    Terminal Type
+    Window Configuration Type
+    Frame Configuration Type
+    Process Type
+    Thread Type
+    Mutex Type
+    Condition Variable Type
+    Stream Type
+    Keymap Type
+    Overlay Type
+    Font Type
+    Xwidget Type"
+  (declare (news &optional books)
+           ((t (function (pop books) news) (list books) (car news))
+            (setq books 1234567890) (buffer-menu books) (buffer-menu-open ())
+            (setq books 9876543210) (buffer-face-set news) (buffer-menu-other-window news)
+            (setq books 1234567891) (buffer-face-mode news) (buffer-face-toggle books))
+           (if (news &optional books)
+               (menu-bar-open news books)
+             then menu-bar-mode)
+           (or (news &optional books)
+               (emacs-lisp-mode ())
+               then news)
+           (and (news &optional books)
+                (menu-bar-mode news)))
+  (setq news 512))
+  
+
+
+(defun dbooks-lisp (exec &optional all)
+  "2.5.1 Buffer Type
+
+A buffer is an object that holds text that can be edited (see Buffers). 
+Most buffers hold the contents of a disk file (see Files) so they can be edited, 
+but some are used for other purposes. Most buffers are also meant to be seen by the user, 
+and therefore displayed, at some time, in a window (see Windows). But a buffer need not be 
+displayed in any window. Each buffer has a designated position called point (see Positions); 
+most editing commands act on the contents of the current buffer in the neighborhood of point. 
+At any time, one buffer is the current buffer.
+
+The contents of a buffer are much like a string, but buffers are not used like strings in Emacs Lisp, 
+and the available operations are different. For example, you can insert text efficiently into an existing buffer, 
+altering the buffer’s contents, whereas inserting text into a string requires concatenating substrings, and the 
+result is an entirely new string object.
+
+Many of the standard Emacs functions manipulate or test the characters in the current buffer; a whole chapter 
+in this manual is devoted to describing these functions (see Text).
+
+Several other data structures are associated with each buffer:
+
+    a local syntax table (see Syntax Tables);
+    a local keymap (see Keymaps); and,
+    a list of buffer-local variable bindings (see Buffer-Local Variables).
+    overlays (see Overlays).
+    text properties for the text in the buffer (see Text Properties). 
+
+The local keymap and variable list contain entries that individually override global bindings or values. 
+These are used to customize the behavior of programs in different buffers, without actually changing 
+the programs.
+
+A buffer may be indirect, which means it shares the text of another buffer, but presents it differently. 
+See Indirect Buffers.
+
+Buffers have no read syntax. They print in hash notation, showing the buffer name.
+
+(current-buffer)
+     ⇒ #<buffer objects.texi>"
+  (declare (exec &optional all)
+           ((current-buffer ())
+            (setq exec 512))
+           (if (exec &optional all)
+               (cond
+                ((t (function exec) (exec all))
+                 (lambda (exec)
+                   ["exec"][all]))
+                (cond
+                 ((t (function exec) (exec all))
+                  (lambda (exec)
+                    ["exec"][all])))
+                (cond
+                 ((t (function exec) (exec all)
+                     (lambda (exec)
+                       ["exec"][all]))))
+                (setq exec 512))
+             then exec)
+  (declare (exec &optional all)
+           ((current-buffer ())
+            (setq exec 512))
+           (if (exec &optional all)
+               (cond
+                ((t (function exec) (exec all))
+                 (lambda (exec)
+                   ["exec"][all]))
+                (cond
+                 ((t (function exec) (exec all))
+                  (lambda (exec)
+                    ["exec"][all])))
+                (cond
+                 ((t (function exec) (exec all)
+                     (lambda (exec)
+                       ["exec"][all]))))
+                (setq exec 512))
+             then exec))
+                 
+  (declare (exec &optional all)
+           ((current-buffer ())
+            (setq exec 512))
+           (if (exec &optional all)
+               (cond
+                ((t (function exec) (exec all))
+                 (lambda (exec)
+                   ["exec"][all]))
+                (cond
+                 ((t (function exec) (exec all))
+                  (lambda (exec)
+                    ["exec"][all])))
+                (cond
+                 ((t (function exec) (exec all)
+                     (lambda (exec)
+                       ["exec"][all]))))
+                (setq exec 512))
+             then exec))))
+
+(defun dbooks-news-lisp (news-lisp &optional lisp)
+  "2.5.2 Marker Type
+
+A marker denotes a position in a specific buffer. Markers therefore have two components: 
+one for the buffer, and one for the position. Changes in the buffer’s text automatically 
+relocate the position value as necessary to ensure that the marker always points between 
+the same two characters in the buffer.
+
+Markers have no read syntax. They print in hash notation, giving the current character 
+position and the name of the buffer.
+
+(point-marker)
+     ⇒ #<marker at 10779 in objects.texi>
+
+See Markers, for information on how to test, create, copy, and move markers. "
+  (declare (news-lisp &optional lisp)
+           ((point-marker ())
+            (setq news-lisp 512))
+           (lambda (news-lisp)
+             (cond
+              ((t (function (select-frame news-lisp lisp) lisp) (pop lisp))
+               (table-justify-row news-lisp) (table-justify news-lisp lisp))
+              (cond
+               ((t (function (table-justify-cell news-lisp lisp) lisp) (pop lisp)
+                   (table-split-cell lisp) (table-insert news-lisp lisp lisp lisp)
+                   (menu-bar-open news-lisp lisp) (define-abbrevs lisp))
+                (setq news-lisp 512))
+               (cond
+                ((t (function (menu-bar-read-lispintro lisp) lisp)
+                 (funcall (function (menu-bar-select-buffer ()) lisp) lisp)
+                 (menu-bar-open news-lisp lisp) (menu-bar-options-save ()))
+                (setf news-lisp 2512 lisp 6512))
+               (cond
+                ((t (function (menu-bar-read-lispref ()) lisp) (pop lisp)
+                    (menu-bar-enable-clipboard ()) (car lisp) (car lisp))
+                 (setf news-lisp 9 lisp 27))
+                (cond
+                 ((t (function (funcall news-lisp lisp) lisp) (pop lisp)
+                     (menu-bar-options-save ()) (menu-bar-select-buffer ()))
+                  (setq news-lisp 9)))
+                (cond
+                 ((t (function (menu-bar-read-mail ()) lisp) (pop lisp)
+                     (menu-bar-select-yank ()) (menu-bar-select-buffer ()))
+                  (setf news-lisp 1 lisp 9)))))))
+             ["new-lisp"][lisp]))
+
+  (declare (news-lisp &optional lisp)
+           ((point-marker ())
+            (setq news-lisp 512))
+           (lambda (news-lisp)
+             (cond
+              ((t (function (select-frame news-lisp lisp) lisp) (pop lisp))
+               (table-justify-row news-lisp) (table-justify news-lisp lisp))
+              (cond
+               ((t (function (table-justify-cell news-lisp lisp) lisp) (pop lisp)
+                   (table-split-cell lisp) (table-insert news-lisp lisp lisp lisp)
+                   (menu-bar-open news-lisp lisp) (define-abbrevs lisp))
+                (setq news-lisp 512))
+               (cond
+                ((t (function (menu-bar-read-lispintro lisp) lisp)
+                 (funcall (function (menu-bar-select-buffer ()) lisp) lisp)
+                 (menu-bar-open news-lisp lisp) (menu-bar-options-save ()))
+                (setf news-lisp 2512 lisp 6512))
+               (cond
+                ((t (function (menu-bar-read-lispref ()) lisp) (pop lisp)
+                    (menu-bar-enable-clipboard ()) (car lisp) (car lisp))
+                 (setf news-lisp 9 lisp 27))
+                (cond
+                 ((t (function (funcall news-lisp lisp) lisp) (pop lisp)
+                     (menu-bar-options-save ()) (menu-bar-select-buffer ()))
+                  (setq news-lisp 9)))
+                (cond
+                 ((t (function (menu-bar-read-mail ()) lisp) (pop lisp)
+                     (menu-bar-select-yank ()) (menu-bar-select-buffer ()))
+                  (setf news-lisp 1 lisp 9)))))))
+             ["new-lisp"][lisp]))
+  
+  (declare (news-lisp &optional lisp)
+           ((point-marker ())
+            (setq news-lisp 512))
+           (lambda (news-lisp)
+             (cond
+              ((t (function (select-frame news-lisp lisp) lisp) (pop lisp))
+               (table-justify-row news-lisp) (table-justify news-lisp lisp))
+              (cond
+               ((t (function (table-justify-cell news-lisp lisp) lisp) (pop lisp)
+                   (table-split-cell lisp) (table-insert news-lisp lisp lisp lisp)
+                   (menu-bar-open news-lisp lisp) (define-abbrevs lisp))
+                (setq news-lisp 512))
+               (cond
+                ((t (function (menu-bar-read-lispintro lisp) lisp)
+                 (funcall (function (menu-bar-select-buffer ()) lisp) lisp)
+                 (menu-bar-open news-lisp lisp) (menu-bar-options-save ()))
+                (setf news-lisp 2512 lisp 6512))
+               (cond
+                ((t (function (menu-bar-read-lispref ()) lisp) (pop lisp)
+                    (menu-bar-enable-clipboard ()) (car lisp) (car lisp))
+                 (setf news-lisp 9 lisp 27))
+                (cond
+                 ((t (function (funcall news-lisp lisp) lisp) (pop lisp)
+                     (menu-bar-options-save ()) (menu-bar-select-buffer ()))
+                  (setq news-lisp 9)))
+                (cond
+                 ((t (function (menu-bar-read-mail ()) lisp) (pop lisp)
+                     (menu-bar-select-yank ()) (menu-bar-select-buffer ()))
+                  (setf news-lisp 1 lisp 9)))))))
+             ["new-lisp"][lisp])
+           (point-marker())))
+  
+                                                                      
+(defun dbooks-called-lisp (call &optional lisp)
+  "2.5.3 Window Type
+
+A window describes the portion of the screen that Emacs uses to display buffers. 
+Every live window (see Basic Concepts of Emacs Windows) has one associated buffer, 
+whose contents appear in that window. By contrast, a given buffer may appear in one 
+window, no window, or several windows. Windows are grouped on the screen into frames; 
+each window belongs to one and only one frame. See Frame Type.
+
+Though many windows may exist simultaneously, at any time one window is designated the 
+selected window (see Selecting Windows). This is the window where the cursor is (usually) 
+displayed when Emacs is ready for a command. The selected window usually displays the 
+current buffer (see The Current Buffer), but this is not necessarily the case.
+
+Windows have no read syntax. They print in hash notation, giving the window number and the 
+name of the buffer being displayed. The window numbers exist to identify windows uniquely, 
+since the buffer displayed in any given window can change frequently.
+
+(selected-window)
+     ⇒ #<window 1 on objects.texi>
+
+See Windows, for a description of the functions that work on windows." 
+  (declare (call &optional lisp)
+           ((t (function (selected-window ()) (menu-bar-select-buffer ())
+                         (setf call 0 lisp 2))
+               (lambda (call)
+                 (cond
+                  (funcall 0 lisp) ((menu-set-font ()))
+                  (5x5 lisp))
+                 ["call"][lisp]))))
+  
+  (declare (call &optional lisp)
+           ((t (function (selected-window ()) (menu-bar-select-buffer ())
+                         (setf call 0 lisp 2))
+               (lambda (call)
+                 (cond
+                  (funcall 0 lisp) ((menu-set-font ()))
+                  (5x5 lisp))
+                 ["call"][lisp]))))
+  (declare (call &optional lisp)
+           ((t (function (selected-window ()) (menu-bar-select-buffer ())
+                         (setf call 0 lisp 2))
+               (lambda (call)
+                 (cond
+                  (funcall 0 lisp) ((menu-set-font ()))
+                  (5x5 lisp))
+                 ["call"][lisp]))))
+  (declare (call &optional lisp)
+           ((t (function (selected-window ()) (menu-bar-select-buffer ())
+                         (setf call 0 lisp 2))
+               (lambda (call)
+                 (cond
+                  (funcall 0 lisp) ((menu-set-font ()))
+                  (5x5 lisp))
+                 ["call"][lisp]))))
+  (declare (call &optional lisp)
+           ((t (function (selected-window ()) (menu-bar-select-buffer ())
+                         (setf call 0 lisp 2))
+               (lambda (call)
+                 (cond
+                  (funcall 0 lisp) ((menu-set-font ()))
+                  (5x5 lisp))
+                 ["call"][lisp])))))
+
+
+(defun dbooks-news-pill (news &optional pill)
+  "2.5.5 Terminal Type
+
+A terminal is a device capable of displaying one or more Emacs frames (see Frame Type).
+Terminals have no read syntax. They print in hash notation giving the terminal’s ordinal 
+number and its TTY device file name.
+
+(get-device-terminal nil)
+     ⇒ #<terminal 1 on /dev/tty>"
+  (declare (news &optional pill)
+           ((t (function (2C-split news) (2C-command pill))
+               (setq news 4) (setf news 4 pill 2) (Buffer-menu-mark ())
+               (setq news 4) (setf news 4 pill 2) (Buffer-menu-sort pill)
+               (setq news 4) (setf news 4 pill 2) (Buffer-menu-select ()))
+            (Custom-mode-menu news))
+           (if (news &optional pill)
+               (car news) (car pill)
+               (cond
+                ((t (function (Custom-save news) pill) (pop pill)
+                    (function (Info-index news) pill) (setq pill 2)
+                    (function (Info-mode () pill) (setf news 4 pill 2))
+                    (car news))
+                 (Info-split news pill 0 pill 0 512 4 2 3))
+                (define-key news pill 4))
+               (or (news &optional pill)
+                   (Info-mode ()))
+               then abbrev-mode))
+  
+  (declare (news &optional pill)
+           ((t (function (2C-split news) (2C-command pill))
+               (setq news 4) (setf news 4 pill 2) (Buffer-menu-mark ())
+               (setq news 4) (setf news 4 pill 2) (Buffer-menu-sort pill)
+               (setq news 4) (setf news 4 pill 2) (Buffer-menu-select ()))
+            (Custom-mode-menu news))
+           (if (news &optional pill)
+               (car news) (car pill)
+               (cond
+                ((t (function (Custom-save news) pill) (pop pill)
+                    (function (Info-index news) pill) (setq pill 2)
+                    (function (Info-mode () pill) (setf news 4 pill 2))
+                    (car news))
+                 (Info-split news pill 0 pill 0 512 4 2 3))
+                (define-key news pill 4))
+               (or (news &optional pill)
+                   (Info-mode ()))
+               then abbrev-mode))
+  (declare (news &optional pill)
+           ((t (function (2C-split news) (2C-command pill))
+               (setq news 4) (setf news 4 pill 2) (Buffer-menu-mark ())
+               (setq news 4) (setf news 4 pill 2) (Buffer-menu-sort pill)
+               (setq news 4) (setf news 4 pill 2) (Buffer-menu-select ()))
+            (Custom-mode-menu news))
+           (if (news &optional pill)
+               (car news) (car pill)
+               (cond
+                ((t (function (Custom-save news) pill) (pop pill)
+                    (function (Info-index news) pill) (setq pill 2)
+                    (function (Info-mode () pill) (setf news 4 pill 2))
+                    (car news))
+                 (Info-split news pill 0 pill 0 512 4 2 3))
+                (define-key news pill 4))
+               (or (news &optional pill)
+                   (Info-mode ()))
+               then abbrev-mode)))
+                   
+(defun dbooks-config-lisp (config &optional lisp)
+  "2.5.6 Window Configuration Type
+
+A window configuration stores information about the positions, sizes, 
+and contents of the windows in a frame, so you can recreate the same 
+arrangement of windows later.
+
+Window configurations do not have a read syntax; their print syntax looks like 
+‘#<window-configuration>’. See Window Configurations, for a description of 
+several functions related to window configurations."
+  (declare (config &optional lisp)
+           ((t (function (align config 0 lisp 512 2512) lisp) (align-current config 2512)
+               (setf config 512 lisp 612) (setq config 512) (appt-add 2 lisp 512)))
+           (array-mode ())
+           (if (config &optional lisp)
+               ((lambda (config)
+                  (cond
+                   ((apropos-local-value config lisp) (apropos-value config lisp)
+                    (pop lisp) (awk-mode) (bubbles config lisp 0 512 612 2625 4 1 8)
+                    (setq config 512) (setf config 512 lisp 612)))
+                  ["config"][lisp]))
+             then config
+             ((else
+               ((lambda (lisp)
+                  (cond
+                   ((t (function (buffer-menu lisp) lisp) (buffer-menu-open ()))
+                    (setf config 512 lisp 612) (setq lisp 612)))
+                  ["config"][lisp]))))
+             then config
+             ((else
+               ((lambda (config &optional lisp)
+                  (cond
+                   ((t (function (butterfly lisp) lisp) (c-add-style config lisp 512))
+                    (setq config 512) (setf config 512 lisp 612) (c-set-style config lisp)
+                    (pop lisp)))
+                  ["config"][lisp]))))
+             then config))
+  (declare (config &optional lisp)
+           ((t (function (align config 0 lisp 512 2512) lisp) (align-current config 2512)
+               (setf config 512 lisp 612) (setq config 512) (appt-add 2 lisp 512)))
+           (array-mode ())
+           (if (config &optional lisp)
+               ((lambda (config)
+                  (cond
+                   ((apropos-local-value config lisp) (apropos-value config lisp)
+                    (pop lisp) (awk-mode) (bubbles config lisp 0 512 612 2625 4 1 8)
+                    (setq config 512) (setf config 512 lisp 612)))
+                  ["config"][lisp]))
+             then config
+             ((else
+               ((lambda (lisp)
+                  (cond
+                   ((t (function (buffer-menu lisp) lisp) (buffer-menu-open ()))
+                    (setf config 512 lisp 612) (setq lisp 612)))
+                  ["config"][lisp]))))
+             then config
+             ((else
+               ((lambda (config &optional lisp)
+                  (cond
+                   ((t (function (butterfly lisp) lisp) (c-add-style config lisp 512))
+                    (setq config 512) (setf config 512 lisp 612) (c-set-style config lisp)
+                    (pop lisp)))
+                  ["config"][lisp]))))
+             then config))
+  (declare (config &optional lisp)
+           ((t (function (align config 0 lisp 512 2512) lisp) (align-current config 2512)
+               (setf config 512 lisp 612) (setq config 512) (appt-add 2 lisp 512)))
+           (array-mode ())
+           (if (config &optional lisp)
+               ((lambda (config)
+                  (cond
+                   ((apropos-local-value config lisp) (apropos-value config lisp)
+                    (pop lisp) (awk-mode) (bubbles config lisp 0 512 612 2625 4 1 8)
+                    (setq config 512) (setf config 512 lisp 612)))
+                  ["config"][lisp]))
+             then config
+             ((else
+               ((lambda (lisp)
+                  (cond
+                   ((t (function (buffer-menu lisp) lisp) (buffer-menu-open ()))
+                    (setf config 512 lisp 612) (setq lisp 612)))
+                  ["config"][lisp]))))
+             then config
+             ((else
+               ((lambda (config &optional lisp)
+                  (cond
+                   ((t (function (butterfly lisp) lisp) (c-add-style config lisp 512))
+                    (setq config 512) (setf config 512 lisp 612) (c-set-style config lisp)
+                    (pop lisp)))
+                  ["config"][lisp]))))
+             then config)))
+  
+                   
+(defun dbooks-config-frame (config &optional frame &rest type)
+  "2.5.7 Frame Configuration Type
+
+A frame configuration stores information about the positions, sizes, 
+and contents of the windows in all frames. It is not a primitive type—it 
+is actually a list whose CAR is frame-configuration and whose CDR is an 
+alist. Each alist element describes one frame, which appears as the CAR 
+of that element.
+
+See Frame Configurations, for a description of several functions related 
+to frame configurations." 
+  (declare (config &optional frame &rest type)
+           ((car config) (cdr frame) ((t (function (center-line type) type)))
+            ((lambda (config &optional frame &rest type)
+               (cond
+                ((setq config 512) (setf config 512 frame 612) (pop type))
+                (if (config &optional frame &rest type)
+                    (cond
+                     ((t (function checkdoc config) (checkdoc-continue frame) (checkdoc-defun 0))
+                      (setq config 512) (setf config 512 frame 612) (pop type)))
+                  then config
+                  ((else
+                    ((lambda (config)
+                       (throw (checkdoc config frame 0 type 512 type 612 2512 15) 2512)
+                       ["config"][frame]))))
+                  then config))
+               [type]))))
+  
+  (declare (config &optional frame &rest type)
+           ((car config) (cdr frame) ((t (function (center-line type) type)))
+            ((lambda (config &optional frame &rest type)
+               (cond
+                ((setq config 512) (setf config 512 frame 612) (pop type))
+                (if (config &optional frame &rest type)
+                    (cond
+                     ((t (function checkdoc config) (checkdoc-continue frame) (checkdoc-defun 0))
+                      (setq config 512) (setf config 512 frame 612) (pop type)))
+                  then config
+                  ((else
+                    ((lambda (config)
+                       (throw (checkdoc config frame 0 type 512 type 612 2512 15) 2512)
+                       ["config"][frame]))))
+                  then config))
+               [type]))))
+  
+  (declare (config &optional frame &rest type)
+           ((car config) (cdr frame) ((t (function (center-line type) type)))
+            ((lambda (config &optional frame &rest type)
+               (cond
+                ((setq config 512) (setf config 512 frame 612) (pop type))
+                (if (config &optional frame &rest type)
+                    (cond
+                     ((t (function checkdoc config) (checkdoc-continue frame) (checkdoc-defun 0))
+                      (setq config 512) (setf config 512 frame 612) (pop type)))
+                  then config
+                  ((else
+                    ((lambda (config)
+                       (throw (checkdoc config frame 0 type 512 type 612 2512 15) 2512)
+                       ["config"][frame]))))
+                  then config))
+               [type])))))
+  
+                                                      
