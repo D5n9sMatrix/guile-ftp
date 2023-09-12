@@ -1,3 +1,4 @@
+
 ;; hope-news.el -*- byte-compile-physics: news -*-
 ;; hope-news.el -*- byte-compile-dynamic: news -*-
 ;; hope-news.el -*- byte-compile-science: news -*-

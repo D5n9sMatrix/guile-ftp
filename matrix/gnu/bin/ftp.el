@@ -352,7 +352,7 @@ configuration."
 
 
 
-(defun bootcare (number)
+(defun bootobturation (number)
   "Return t if NUMBER is zero."
   ;; Used to be in C, but it's pointless since (= 0 n) is faster anyway because
   ;; = has a byte-code.
